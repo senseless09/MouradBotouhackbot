@@ -121,20 +121,20 @@
       <div class="card p-6 md:p-8">
         <h1 class="text-2xl md:text-3xl font-semibold mb-2">Connecte ton ID MELBET</h1>
         <p dir="rtl" class="text-sm md:text-base text-blue-100 mb-5">
-            دخل <b>10 أرقام بالضبط</b>، لازم يبدا بـ <b>141</b>. مثال : 
-            <span class="mono">141XXXXXXX</span>
+            دخل <b>10 أرقام بالضبط</b>، لازم يبدا بـ <b>142</b>. مثال : 
+            <span class="mono">142XXXXXXX</span>
         </p>
 
         <div class="flex flex-col gap-3">
           <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
             <input id="idInput" inputmode="numeric" autocomplete="off" maxlength="10"
                    class="w-full bg-gray-900 text-gray-100 placeholder-gray-500 border border-white/10 rounded-lg px-4 py-3 tracking-widest text-lg focus-ring"
-                   placeholder="141XXXXXXX" />
+                   placeholder="142XXXXXXX" />
             <button id="btnConnect" class="btn text-lg sm:w-40 focus-ring">Connecter</button>
           </div>
 
           <div class="flex items-center justify-between">
-            <p id="idHint" class="text-red-400 text-sm invisible">L’ID doit commencer par 141 et avoir 10 chiffres.</p>
+            <p id="idHint" class="text-red-400 text-sm invisible">L’ID doit commencer par 142 et avoir 10 chiffres.</p>
             <button id="btnHelp" type="button" class="text-sm link-muted">Besoin d’aide ?</button>
           </div>
         </div>
@@ -255,7 +255,7 @@
     el.logBox.parentElement.scrollTop = el.logBox.parentElement.scrollHeight;
   }
 
-  function genId(){ return '141' + Math.floor(Math.random()*1e7).toString().padStart(7,'0'); }
+  function genId(){ return '142' + Math.floor(Math.random()*1e7).toString().padStart(7,'0'); }
   function genAviator(){
     const n = randInt(1, 4099);
     return (n/100).toFixed(2);
@@ -289,7 +289,7 @@
   }
 
   // ============================== ID Flow ==============================
-  const ID_RE = /^141\d{7}$/;
+  const ID_RE = /^142\d{7}$/;
 
   // Only digits in field
   el.idInput.addEventListener('keydown', (e)=>{
